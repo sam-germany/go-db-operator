@@ -1,0 +1,12 @@
+apiVersion: postgresql.rdsoperator.com/v1alpha1
+kind: RdsPostgres
+metadata:
+  labels:
+    app.kubernetes.io/name: rdspostgres
+    app.kubernetes.io/instance: rdspostgres-sample
+    app.kubernetes.io/part-of: go-db-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: go-db-operator
+  name: rdspostgres-sample
+spec:
+  # TODO(user): Add fields here

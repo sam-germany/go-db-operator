@@ -1,0 +1,19 @@
+domain: rdsoperator.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: go-db-operator
+repo: github.com/rds-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: rdsoperator.com
+  group: postgresql
+  kind: RdsPostgres
+  path: github.com/rds-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
